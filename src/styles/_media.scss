@@ -1,0 +1,34 @@
+@media (max-width: 1200px) {
+    #root {
+        height: auto;
+        padding: 72px 0;
+    }
+
+    .main {
+        > .info {
+            width: 320px;
+
+            > .titles {
+                > .title {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        > .features {
+            flex-direction: column;
+        }
+    }
+
+    .card {
+        width: 320px;
+
+        > .content {
+            > .box {
+                > .title {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

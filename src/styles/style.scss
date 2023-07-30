@@ -1,0 +1,116 @@
+@import 'config.scss';
+
+body {
+    height: 100vh;
+    background: $veryLightGray;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $veryLightGray;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+
+    > .info {
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        > .titles {
+            > .title:nth-child(1) {
+                font-weight: 200;
+            }
+
+            > .title:nth-child(2) {
+                font-weight: 600;
+            }
+
+            > .title {
+                color: $veryDarkBlue;
+                text-align: center;
+            }
+        }
+
+        > .description {
+            font-weight: 400;
+            color: $grayishBlue;
+            text-align: center;
+        }
+    }
+
+    > .features {
+        display: flex;
+        gap: 32px;
+
+        > .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 32px;
+        }
+
+    }
+}
+
+.card {
+    background: white;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 360px;
+
+    > .border {
+        height: 6px;
+        border-radius: 8px 8px 0 0;
+
+        &.red {
+            background: $red;
+        }
+
+        &.cyan {
+            background: $cyan;
+        }
+
+        &.orange {
+            background: $orange;
+        }
+
+        &.blue {
+            background: $blue;
+        }
+    }
+
+    > .content {
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        > .box {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            > .description {
+                color: $grayishBlue;
+            }
+        }
+
+        > .icon {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+
+
+@import 'media.scss';
